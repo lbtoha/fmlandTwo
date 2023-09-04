@@ -11,6 +11,8 @@ const AudioPlayerWithProgressBar = ({
     audioRef,
     progressBarRef,
     progress,
+    duration,
+    currentTime,
     handlePlayToggle,
     handleFastReverse,
     handleFastForward,
@@ -49,6 +51,13 @@ const AudioPlayerWithProgressBar = ({
             className="progress-pass"
             style={{ width: `${progress}%` }}
           ></div>
+        </div>
+        <div className="time-keep">
+          {" "}
+          <span className="current-time">{currentTime}</span> /{" "}
+          <span className="duration">
+            {Number.parseFloat(duration / 30).toFixed(0)}
+          </span>{" "}
         </div>
       </div>
     </div>

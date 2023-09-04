@@ -1,3 +1,4 @@
+import RadioSectionDetails from "@/components/pages/radioStationDetails/RadioSectionDetails";
 import PageBanner from "@/components/shared/PageBanner";
 import { Metadata } from "next";
 
@@ -10,6 +11,7 @@ const page = () => {
   return (
     <>
       <PageBanner pageTitle="Radio Station Details" />
+      <RadioSectionDetails />
     </>
   );
 };
