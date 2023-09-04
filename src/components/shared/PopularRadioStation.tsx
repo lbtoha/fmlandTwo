@@ -1,5 +1,5 @@
-import popularRadioStationData from "../../../../public/data/popularRadioStationData";
-import PopularRadioStationCard from "./PopularRadioStationCard";
+import popularRadioStationData from "../../../public/data/popularRadioStationData";
+import PopularRadioStationCard from "../pages/homeTwo/PopularRadioStationCard";
 
 const PopularRadioStation = () => {
   return (

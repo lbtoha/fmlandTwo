@@ -1,11 +1,9 @@
 "use client";
 import Image from "next/image";
-import { MutableRefObject, useRef } from "react";
+import { MutableRefObject, ReactNode, useRef } from "react";
 import Slider from "react-slick";
-import popularShowData from "../../../../public/data/popularShowData";
-import PopularShowCard from "../home/PopularShowCard";
 
-const PopularShow = () => {
+const PopularShow = ({ children }: { children: ReactNode }) => {
   type SliderRefType = MutableRefObject<Slider | null>;
 
   let sliderRef: SliderRefType = useRef(null);
@@ -86,15 +84,9 @@ const PopularShow = () => {
             </button>
           </div>
         </div>
-
         <div className="popular-show-slider-wrapper">
           <Slider ref={sliderRef} {...settings} className="popular-show-slider">
-            {popularShowData.map(({ id, ...props }) => (
-              <PopularShowCard key={id} {...props} />
-            ))}
-            {/* <!-- single-slide end --> */}
-
-            {/* <!-- single-slide end --> */}
+            {children}
           </Slider>
           {/* <!-- popular-show-slider end --> */}
         </div>

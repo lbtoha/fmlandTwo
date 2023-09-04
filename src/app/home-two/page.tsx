@@ -1,7 +1,12 @@
 import Banner from "@/components/pages/homeTwo/Banner";
+import BestRadioStation from "@/components/pages/homeTwo/BestRadioStation";
 import PopularOnlineStation from "@/components/pages/homeTwo/PopularOnlineStation";
-import PopularRadioStation from "@/components/pages/homeTwo/PopularRadioStation";
-import PopularShow from "@/components/pages/homeTwo/PopularShow";
+import PopularShowTwo from "@/components/pages/homeTwo/PopularShowTwo";
+import Testimonial from "@/components/pages/homeTwo/Testimonial";
+import Latestblog from "@/components/shared/Latestblog";
+import Overview from "@/components/shared/Overview";
+import PopularRadioStation from "@/components/shared/PopularRadioStation";
+import Sponsor from "@/components/shared/Sponsor";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,10 +20,12 @@ const page = () => {
       <Banner />
       <PopularOnlineStation />
       <PopularRadioStation />
-      <PopularShow />
-      {/* <Sponsor /> */}
-
-      {/* <Latestblog /> */}
+      <PopularShowTwo />
+      <BestRadioStation />
+      <Sponsor />
+      <Testimonial />
+      <Latestblog />
+      <Overview />
     </>
   );
 };

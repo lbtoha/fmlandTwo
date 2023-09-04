@@ -5,12 +5,17 @@ type Props = {
   icon: StaticImageData;
   showName: string;
   radioName: string;
+  bg?: boolean;
 };
 
-const PopularShowCard = ({ image, showName, radioName, icon }: Props) => {
+const PopularShowCard = ({ image, showName, radioName, icon, bg }: Props) => {
   return (
     <div className="single-slide">
-      <div className="podcast-item style-three link-item">
+      <div
+        className={`podcast-item style-three ${
+          bg && "podcast-item-dark-bg"
+        } link-item`}
+      >
         <a href="radio-station-details.html" className="full-link"></a>
         <div className="podcast-item-thumb">
           <Image width={416} height={300} src={image} alt="image" />

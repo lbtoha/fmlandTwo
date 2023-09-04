@@ -22,49 +22,30 @@ export const navbarItems = [
     linkURL: "/about",
   },
   {
-    id: 1206,
-    item: "Show Schedule",
-    linkURL: "/show-schedule",
+    id: 120658,
+    item: "Radio Station",
+    linkURL: "/radio-station",
   },
   {
-    id: 1207,
+    id: 1206,
     item: "Blog",
     linkURL: "/blog",
   },
+
   {
     id: 1208,
     item: "Pages",
     linkURL: "/pages",
     dropDown: [
       {
-        id: 1209,
-        dropDownItem: "Show Details",
-        dropDownLink: "/show-details",
-      },
-      {
-        id: 12010,
-        dropDownItem: "Radio Jokey",
-        dropDownLink: "/radio-jockey",
-      },
-      {
-        id: 12011,
-        dropDownItem: "Radio Jokey Details",
-        dropDownLink: "/jockey-details",
-      },
-      {
-        id: 120154,
+        id: 1201558,
         dropDownItem: "Blog Details",
         dropDownLink: "/blog-details",
       },
       {
-        id: 12012,
-        dropDownItem: "FAQ",
-        dropDownLink: "/faq",
-      },
-      {
-        id: 12013,
-        dropDownItem: "Sponsor",
-        dropDownLink: "/sponsor",
+        id: 120154,
+        dropDownItem: "Radio Station Details",
+        dropDownLink: "/radio-station-details",
       },
     ],
   },

@@ -316,3 +316,11 @@
     top: 150%;
   }
 }
+
+.padding110 {
+  padding-left: rem(110px);
+
+  @include media(575px) {
+    padding-left: rem(0px);
+  }
+}
