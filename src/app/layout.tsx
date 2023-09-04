@@ -1,5 +1,6 @@
 "use client";
 import "@/app/globals.css";
+import Footer from "@/components/shared/Footer";
 import NavBar from "@/components/shared/navbar/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import type { Metadata } from "next";
@@ -42,6 +43,7 @@ export default function RootLayout({
             <i className="ri-arrow-up-line"></i>
           </a>
         </div>
+        <Footer />
       </body>
     </html>
   );

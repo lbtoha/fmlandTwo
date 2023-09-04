@@ -6,18 +6,13 @@ export const navbarItems = [
     dropDown: [
       {
         id: 1202,
-        dropDownItem: "Home One",
+        dropDownItem: "Home one",
         dropDownLink: "/",
       },
       {
         id: 1203,
         dropDownItem: "Home Two",
         dropDownLink: "/home-two",
-      },
-      {
-        id: 1204,
-        dropDownItem: "Home Three",
-        dropDownLink: "/home-three",
       },
     ],
   },
