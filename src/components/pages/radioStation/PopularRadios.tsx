@@ -1,9 +1,9 @@
 "use client";
+import popularRadioSliderData from "@/../public/data/popularRadioSliderData";
 import NextArrow from "@/components/shared/NextArrow";
 import PrevArrow from "@/components/shared/PrevArrow";
 import { MouseEvent } from "react";
 import Slider from "react-slick";
-import popularRadioSliderData from "../../../../public/data/popularRadioSliderData";
 import PopularRadiosCard from "./PopularRadiosCard";
 
 const PopularRadios = () => {

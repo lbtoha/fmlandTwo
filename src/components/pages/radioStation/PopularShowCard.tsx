@@ -8,16 +8,10 @@ type Props = {
   radio: string;
 };
 
-const PopularRadioStationCard = ({
-  image,
-  icon,
-  title,
-  message,
-  radio,
-}: Props) => {
+const PopularShowCard = ({ image, icon, title, message, radio }: Props) => {
   return (
-    <div className="col-xxl-4 col-lg-6">
-      <div className="station-item-two">
+    <div className="single-slide">
+      <div className="station-item-two p-4">
         <div className="thumb">
           <Image width={120} height={222} src={image} alt="image" />
         </div>
@@ -41,4 +35,4 @@ const PopularRadioStationCard = ({
   );
 };
 
-export default PopularRadioStationCard;
+export default PopularShowCard;

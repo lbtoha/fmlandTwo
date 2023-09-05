@@ -12,14 +12,18 @@ const ExpertRjCardTwo = ({
 }) => {
   return (
     <div className="col-lg-3 col-sm-6">
-      <div className="rj-item style-two">
+      <div className="rj-item style-two rounded-30 p-17">
         <div className="thumb">
-          <Image width={306} height={460} src={image} alt="image" />
+          <Image
+            width={306}
+            height={460}
+            src={image}
+            alt="image"
+            className="rounded-20"
+          />
         </div>
         <div className="content">
-          <h4 className="rj-name">
-            <Link href="/jockey-details">{name}</Link>
-          </h4>
+          <h4 className="rj-name">{name}</h4>
           <p className="rj-designation">{title}</p>
           <ul className="rj-social-links">
             <li>

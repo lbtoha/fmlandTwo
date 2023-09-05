@@ -1,4 +1,4 @@
-import blogData from "../../../../public/data/blogData";
+import blogData from "@/../public/data/blogData";
 import BlogCard from "./BlogCard";
 
 const Blog = () => {

@@ -1,4 +1,4 @@
-import comments from "../../../../public/data/comments";
+import comments from "@/../public/data/comments";
 import CommentCard from "./CommentCard";
 
 const BlogDetailsComments = () => {

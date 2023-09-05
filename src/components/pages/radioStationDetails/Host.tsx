@@ -1,4 +1,4 @@
-import { radioJockeys } from "../../../../public/data/radioJockey";
+import { radioJockeys } from "@/../public/data/radioJockey";
 import ExpertRjCardTwo from "./ExpertRjCardTwo";
 
 const Host = () => {
@@ -9,7 +9,7 @@ const Host = () => {
         <div className="section-top-line mt-4"></div>
       </div>
       <div className="row gy-4">
-        {radioJockeys.map(({ id, ...props }) => (
+        {radioJockeys.slice(0, 4).map(({ id, ...props }) => (
           <ExpertRjCardTwo key={id} {...props} />
         ))}
       </div>

@@ -1,9 +1,9 @@
 "use client";
+import testimonialData from "@/../public/data/testimonialData";
 import NextArrow from "@/components/shared/NextArrow";
 import PrevArrow from "@/components/shared/PrevArrow";
 import { MouseEvent } from "react";
 import Slider from "react-slick";
-import testimonialData from "../../../../public/data/testimonialData";
 import TestimonialCard from "./TestimonialCard";
 
 const Testimonial = () => {

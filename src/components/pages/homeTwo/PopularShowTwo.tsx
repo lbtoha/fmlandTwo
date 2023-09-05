@@ -1,5 +1,5 @@
+import popularShowData from "@/../public/data/popularShowData";
 import PopularShow from "@/components/shared/PopularShow";
-import popularShowData from "../../../../public/data/popularShowData";
 import PopularShowCard from "../../shared/PopularShowCard";
 
 const PopularShowTwo = () => {

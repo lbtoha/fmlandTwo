@@ -1,5 +1,5 @@
+import popularAlbumData from "@/../public/data/popularAlbumData";
 import Image from "next/image";
-import popularAlbumData from "../../../../public/data/popularAlbumData";
 import PopularAlbumCard from "./PopularAlbumCard";
 
 const PopularAlbum = () => {

@@ -1,5 +1,7 @@
 "use client";
 import useAudioPlayer from "@/hooks/useAudioPlayer";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const AudioPlayerWithProgressBar = ({
   audio = "/audio/main.mp3",
@@ -23,21 +25,39 @@ const AudioPlayerWithProgressBar = ({
     handleProgressBarMouseMove,
     handleProgress,
   } = useAudioPlayer();
+
+  // formate the duration in second
+  const [durationInMin, setDurationInMin] = useState("");
+
+  useEffect(() => {
+    const minutes: number = Math.floor(duration / 60);
+    const remainingSeconds: number = Math.floor(duration % 60);
+    const newDuration = `${minutes}:${remainingSeconds} `.replace(
+      /:0(\d) min$/,
+      ":$1 min"
+    );
+    setDurationInMin(newDuration);
+  }, [duration, audio]);
+
   return (
     <div className={`maudio ${playToggle && "playing"}`}>
       <audio onTimeUpdate={handleProgress} ref={audioRef} src={audio}></audio>
       <div className="audio-control">
-        <a
+        <Link
           onClick={handleFastReverse}
           href="javascript:;"
           className="fast-reverse"
-        ></a>
-        <a onClick={handlePlayToggle} href="javascript:;" className="play"></a>
-        <a
+        ></Link>
+        <Link
+          onClick={handlePlayToggle}
+          href="javascript:;"
+          className="play"
+        ></Link>
+        <Link
           href="javascript:;"
           onClick={handleFastForward}
           className="fast-forward"
-        ></a>
+        ></Link>
         <div
           className="progress-bar"
           ref={progressBarRef}
@@ -55,9 +75,7 @@ const AudioPlayerWithProgressBar = ({
         <div className="time-keep">
           {" "}
           <span className="current-time">{currentTime}</span> /{" "}
-          <span className="duration">
-            {Number.parseFloat(duration / 30).toFixed(0)}
-          </span>{" "}
+          <span className="duration">{durationInMin}</span>{" "}
         </div>
       </div>
     </div>

@@ -35,7 +35,7 @@ export const navbarItems = [
   {
     id: 1208,
     item: "Pages",
-    linkURL: "/pages",
+    linkURL: "#",
     dropDown: [
       {
         id: 1201558,
@@ -46,6 +46,11 @@ export const navbarItems = [
         id: 120154,
         dropDownItem: "Radio Station Details",
         dropDownLink: "/radio-station-details",
+      },
+      {
+        id: 12015454,
+        dropDownItem: "FAQ",
+        dropDownLink: "/faq",
       },
     ],
   },

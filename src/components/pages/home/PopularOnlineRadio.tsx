@@ -1,5 +1,5 @@
+import popularRadioData from "@/../public/data/popularRadioData";
 import Link from "next/link";
-import popularRadioData from "../../../../public/data/popularRadioData";
 import PopularRadioCard from "./PopularRadioCard";
 
 const PopularOnlineRadio = () => {

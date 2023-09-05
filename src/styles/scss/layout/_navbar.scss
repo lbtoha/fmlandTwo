@@ -191,3 +191,11 @@
     @extend .transition;
   }
 }
+
+.site-menu {
+  .menu-item {
+    .active {
+      color: #66fcf1;
+    }
+  }
+}

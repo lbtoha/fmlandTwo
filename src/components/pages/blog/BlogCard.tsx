@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 type Props = {
   image: StaticImageData;
   name: string;
@@ -11,9 +12,9 @@ const BlogCard = ({ image, name, date, title }: Props) => {
     <div className="col-lg-4 col-md-6">
       <div className="blog-item style-three">
         <div className="blog-thumb">
-          <a href="blog-details.html" className="d-block h-100">
+          <Link href="blog-details" className="d-block h-100">
             <Image width={376} height={222} src={image} alt="image" />
-          </a>
+          </Link>
         </div>
         <div className="blog-content">
           <div className="blog-meta">
@@ -21,11 +22,11 @@ const BlogCard = ({ image, name, date, title }: Props) => {
             <span className="single-meta">{date}</span>
           </div>
           <h4 className="blog-title">
-            <a href="blog-details.html">{title}</a>
+            <Link href="blog-details">{title}</Link>
           </h4>
-          <a href="blog-details.html" className="blog-btn">
+          <Link href="blog-details" className="blog-btn">
             Read more
-          </a>
+          </Link>
         </div>
       </div>
     </div>

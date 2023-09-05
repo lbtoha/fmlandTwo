@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 type Props = {
   image: StaticImageData;
@@ -16,7 +17,7 @@ const PopularShowCard = ({ image, showName, radioName, icon, bg }: Props) => {
           bg && "podcast-item-dark-bg"
         } link-item`}
       >
-        <a href="radio-station-details.html" className="full-link"></a>
+        <Link href="radio-station-details" className="full-link"></Link>
         <div className="podcast-item-thumb">
           <Image width={416} height={300} src={image} alt="image" />
         </div>

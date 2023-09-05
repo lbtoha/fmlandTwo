@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const LifeEventMusic = () => {
   return (
@@ -17,9 +18,9 @@ const LifeEventMusic = () => {
                 tellus tincidunt elementum feugiat sed sit ultrices. Adipiscing
                 non lacinia laoreet dui pulvinar tristique.{" "}
               </p>
-              <a href="radio-station.html" className="btn btn-main btn-rounded">
+              <Link href="radio-station" className="btn btn-main btn-rounded">
                 Explore More
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-6 order-lg-2 order-1">

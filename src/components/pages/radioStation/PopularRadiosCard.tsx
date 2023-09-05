@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 const PopularRadiosCard = ({
   icon,
@@ -12,15 +13,15 @@ const PopularRadiosCard = ({
   return (
     <div className="single-slide">
       <div className="station-item link-item">
-        <a href="radio-station-details.html" className="full-link"></a>
+        <Link href="radio-station-details" className="full-link"></Link>
         <div className="station-item-icon">
           <Image width={24} height={40} src={icon} alt="image" />
         </div>
         <h4 className="station-item-title">{title}</h4>
         <p>{radio}</p>
-        <a href="#0">
+        <Link href="#0">
           Explore <i className="fas fa-long-arrow-alt-right"></i>
-        </a>
+        </Link>
       </div>
     </div>
   );

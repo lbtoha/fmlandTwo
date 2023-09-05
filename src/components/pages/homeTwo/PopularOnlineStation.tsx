@@ -1,5 +1,5 @@
+import popularOnlineStation from "@/../public/data/popularOnlineStation";
 import Image from "next/image";
-import popularOnlineStation from "../../../../public/data/popularOnlineStation";
 import SingleAudioPlayer from "./SingleAudioPlayer";
 
 const PopularOnlineStation = () => {

@@ -240,6 +240,13 @@
       }
     }
   }
+  .site-menu {
+    .menu-item {
+      .active {
+        color: $main-color-three;
+      }
+    }
+  }
 }
 
 .wave-shape {

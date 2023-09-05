@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const PopularRadios = () => {
   return (
@@ -20,7 +21,7 @@ const PopularRadios = () => {
         <div className="row gy-4">
           <div className="col-lg-3 col-sm-6">
             <div className="station-item link-item">
-              <a href="radio-station-details.html" className="full-link"></a>
+              <Link href="radio-station-details" className="full-link"></Link>
               <div className="station-item-icon">
                 <Image
                   width={24}
@@ -31,14 +32,14 @@ const PopularRadios = () => {
               </div>
               <h4 className="station-item-title">FM Open</h4>
               <p>Radio 86.5</p>
-              <a href="#0">
+              <Link href="#0">
                 Explore <i className="fas fa-long-arrow-alt-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6">
             <div className="station-item link-item">
-              <a href="radio-station-details.html" className="full-link"></a>
+              <Link href="radio-station-details" className="full-link"></Link>
               <div className="station-item-icon">
                 <Image
                   width={24}
@@ -49,14 +50,14 @@ const PopularRadios = () => {
               </div>
               <h4 className="station-item-title">FM Open</h4>
               <p>Radio 86.5</p>
-              <a href="#0">
+              <Link href="#0">
                 Explore <i className="fas fa-long-arrow-alt-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6">
             <div className="station-item link-item">
-              <a href="radio-station-details.html" className="full-link"></a>
+              <Link href="radio-station-details" className="full-link"></Link>
               <div className="station-item-icon">
                 <Image
                   width={24}
@@ -67,14 +68,14 @@ const PopularRadios = () => {
               </div>
               <h4 className="station-item-title">FM Open</h4>
               <p>Radio 86.5</p>
-              <a href="#0">
+              <Link href="#0">
                 Explore <i className="fas fa-long-arrow-alt-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6">
             <div className="station-item link-item">
-              <a href="radio-station-details.html" className="full-link"></a>
+              <Link href="radio-station-details" className="full-link"></Link>
               <div className="station-item-icon">
                 <Image
                   width={24}
@@ -85,16 +86,16 @@ const PopularRadios = () => {
               </div>
               <h4 className="station-item-title">FM Open</h4>
               <p>Radio 86.5</p>
-              <a href="#0">
+              <Link href="#0">
                 Explore <i className="fas fa-long-arrow-alt-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
         <div className="mt-60 text-center">
-          <a href="radio-station" className="btn btn-rounded btn-main">
+          <Link href="radio-station" className="btn btn-rounded btn-main">
             Explore More
-          </a>
+          </Link>
         </div>
       </div>
     </section>

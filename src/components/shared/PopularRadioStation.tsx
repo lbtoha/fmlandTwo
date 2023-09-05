@@ -1,3 +1,4 @@
+import Link from "next/link";
 import popularRadioStationData from "../../../public/data/popularRadioStationData";
 import PopularRadioStationCard from "../pages/homeTwo/PopularRadioStationCard";
 
@@ -24,9 +25,9 @@ const PopularRadioStation = () => {
           ))}
         </div>
         <div className="mt-60 text-center">
-          <a href="radio-station.html" className="btn btn-main btn-rounded">
+          <Link href="radio-station" className="btn btn-main btn-rounded">
             Explore More
-          </a>
+          </Link>
         </div>
       </div>
     </section>
