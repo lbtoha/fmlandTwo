@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import AnimateHeight from "react-animate-height";
 
 const NavBar = () => {
-  const [openSubMenu, setOpenSubMenu] = useState(null);
+  const [openSubMenu, setOpenSubMenu] = useState<string | number | null>(null);
   const [lastScrollTop, setLastScrollTop] = useState<number>(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 

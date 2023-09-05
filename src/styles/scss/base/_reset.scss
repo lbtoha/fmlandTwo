@@ -1,11 +1,9 @@
 /* reset css start */
 // @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Roboto:wght@400;500&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Oswald:wght@600&family=Roboto:wght@400;500&display=swap");
-
-$heading-font: "Lexend", sans-serif;
-$para-font: "Roboto", sans-serif;
-$top-font: "Oswald", sans-serif;
+$heading-font: var(--heading-font);
+$para-font: var(--para-font);
+$top-font: var(--top-font);
 
 html {
   scroll-behavior: smooth;
