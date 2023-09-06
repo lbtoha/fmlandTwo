@@ -24,7 +24,7 @@ const popularRadioStationData = [
   {
     id: uuidv4(),
     image: image2,
-    title: "Radio OMP",
+    title: "Radio Op",
     radio: "Radio 95.5",
     message: "Lorem ipsum dolor sit at of amet, The most.",
     icon: icon2,
@@ -40,7 +40,7 @@ const popularRadioStationData = [
   {
     id: uuidv4(),
     image: image4,
-    title: "Sound Lab",
+    title: "FM Lab",
     radio: "Radio 95.5",
     message: "Lorem ipsum dolor sit at of amet, The most.",
     icon: icon4,
@@ -56,7 +56,7 @@ const popularRadioStationData = [
   {
     id: uuidv4(),
     image: image6,
-    title: "Radio OMP",
+    title: "Radio OM",
     radio: "Radio 95.5",
     message: "Lorem ipsum dolor sit at of amet, The most.",
     icon: icon6,

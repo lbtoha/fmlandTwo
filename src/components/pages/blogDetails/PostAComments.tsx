@@ -27,7 +27,6 @@ const PostAComments: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    console.log("Form data submitted:", formData);
 
     // Reset the form after submission
     setFormData({

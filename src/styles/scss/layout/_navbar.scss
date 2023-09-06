@@ -23,7 +23,7 @@
     @extend .w-100;
     @extend .h-100;
     background-color: rgba(7, 17, 38, 0.59);
-    backdrop-filter: blur(6.5px);
+    backdrop-filter: blur(15px);
     @extend .z-index-c;
   }
   .navbar-brand {
@@ -36,6 +36,7 @@
     &::before {
       display: none;
     }
+
     .navbar-collapse {
       @include media(1199px) {
         padding: rem(20px);

@@ -11,13 +11,27 @@ const NavBar = () => {
   const [openSubMenu, setOpenSubMenu] = useState<string | number | null>(null);
   const [lastScrollTop, setLastScrollTop] = useState<number>(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [multiHomeNavbar, setMultiHomeNavbar] = useState(true);
 
+  // open mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+    if (!isMobileMenuOpen) {
+      // mobile device scroll control
+      document.body.classList.add("overflow-hidden");
+    } else {
+      // mobile device scroll control
+      document.body.classList.remove("overflow-hidden");
+    }
   };
 
+  // close mobile menu
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+    if (!multiHomeNavbar) {
+      handleMultiHomeNavbar();
+    }
+    document.body.classList.remove("overflow-hidden");
   };
 
   const toggleSubMenu = (index: string | number | null) => {
@@ -26,7 +40,6 @@ const NavBar = () => {
     } else {
       setOpenSubMenu(index);
     }
-    console.log("clicked"); // Log a message when the button is clicked
   };
 
   const pathname = usePathname();
@@ -65,9 +78,18 @@ const NavBar = () => {
     };
   }, [lastScrollTop]);
 
+  // this function handle the ".multi-home-navbar" class only for mobile deive
+  const handleMultiHomeNavbar = () => {
+    setMultiHomeNavbar(!multiHomeNavbar);
+  };
+
   return (
     //   navbar start
-    <nav className="navbar main-navbar multi-home-navbar navbar-expand-xl">
+    <nav
+      className={`navbar main-navbar navbar-expand-xl ${
+        multiHomeNavbar ? "multi-home-navbar" : ""
+      }`}
+    >
       <div className="container">
         <Link className="navbar-brand" href="/">
           <Image width={151} height={42} src={logo} alt="site logo" />
@@ -80,7 +102,10 @@ const NavBar = () => {
           aria-controls="navbarSupportedContent"
           aria-expanded={isMobileMenuOpen}
           aria-label="Toggle navigation"
-          onClick={toggleMobileMenu}
+          onClick={() => {
+            handleMultiHomeNavbar();
+            toggleMobileMenu();
+          }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>

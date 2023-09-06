@@ -18,18 +18,14 @@ const PopularRadios = () => {
       <PrevArrow
         currentSlide={0}
         slideCount={0}
-        onClick={(event: MouseEvent<HTMLButtonElement>) => {
-          console.log("clicked");
-        }}
+        onClick={(event: MouseEvent<HTMLButtonElement>) => {}}
       />
     ),
     nextArrow: (
       <NextArrow
         currentSlide={0}
         slideCount={0}
-        onClick={(event: MouseEvent<HTMLButtonElement>) => {
-          console.log("clicked");
-        }}
+        onClick={(event: MouseEvent<HTMLButtonElement>) => {}}
       />
     ),
     autoplay: false,
