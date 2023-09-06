@@ -1,5 +1,4 @@
 "use client";
-import "@/app/globals.css";
 import Footer from "@/components/shared/Footer";
 import NavBar from "@/components/shared/navbar/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
